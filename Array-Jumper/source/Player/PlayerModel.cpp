@@ -2,6 +2,12 @@
 
 namespace Player
 {
+
+	void PlayerModel::initialize()
+	{
+		setPlayerState(PlayerState::ALIVE);
+	}
+
 	PlayerState PlayerModel::getPlayerState()
 	{
 		return player_state;
