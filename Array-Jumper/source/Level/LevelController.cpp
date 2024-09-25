@@ -37,4 +37,10 @@ namespace Level
 		delete(level_view);
 	}
 
+	BlockType LevelController::getCurrentBoxValue(int currentPosition)
+	{
+		return level_model->getCurrentBoxValue(currentPosition);
+	
+	}
+
 }
