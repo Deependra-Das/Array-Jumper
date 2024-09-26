@@ -87,8 +87,6 @@ namespace Level
 			drawBox(position);
 			drawBoxValue(position, blockTypeToDraw);
 		}
-
-
 	}
 
 	void LevelView::deleteImages()
@@ -181,4 +179,8 @@ namespace Level
 		overlay_image->render();
 	}
 
+	BoxDimensions LevelView::getBoxDimensions()
+	{
+		return box_dimensions;
+	}
 }
