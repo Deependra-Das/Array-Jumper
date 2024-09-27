@@ -23,6 +23,7 @@ namespace Player
 
 		void readInput();
 		void destroy();
+		void onDeath();
 
 	public:
 		PlayerController();
@@ -37,5 +38,7 @@ namespace Player
 		void takeDamage();
 		void resetPlayer();
 		int getCurrentPosition();
+		int getCurrentLives();
+
 	};
 }
